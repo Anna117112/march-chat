@@ -1,0 +1,25 @@
+INFO  2021-04-15 22:10:08 [main] ru.geekbrains.march.chat.server.Server (Server.java:30) - Сервер запущен на порту: 8189
+INFO  2021-04-15 22:10:08 [main] ru.geekbrains.march.chat.server.Server (Server.java:32) - Ожидание клиентов...
+INFO  2021-04-15 22:10:17 [main] ru.geekbrains.march.chat.server.Server (Server.java:34) - Новый клиент подключился
+INFO  2021-04-15 22:10:17 [main] ru.geekbrains.march.chat.server.Server (Server.java:32) - Ожидание клиентов...
+ERROR 2021-04-15 22:10:27 [Thread-1] ru.geekbrains.march.chat.server.ClientHandler (ClientHandler.java:46) - Throwing
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[?:1.8.0_191]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[?:1.8.0_191]
+	at java.net.SocketInputStream.read(SocketInputStream.java:224) ~[?:1.8.0_191]
+	at java.io.DataInputStream.readUnsignedShort(DataInputStream.java:337) ~[?:1.8.0_191]
+	at java.io.DataInputStream.readUTF(DataInputStream.java:589) ~[?:1.8.0_191]
+	at java.io.DataInputStream.readUTF(DataInputStream.java:564) ~[?:1.8.0_191]
+	at ru.geekbrains.march.chat.server.ClientHandler.lambda$new$0(ClientHandler.java:38) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+INFO  2021-04-15 22:10:49 [main] ru.geekbrains.march.chat.server.Server (Server.java:34) - Новый клиент подключился
+INFO  2021-04-15 22:10:49 [main] ru.geekbrains.march.chat.server.Server (Server.java:32) - Ожидание клиентов...
+ERROR 2021-04-15 22:10:54 [Thread-2] ru.geekbrains.march.chat.server.ClientHandler (ClientHandler.java:46) - Throwing
+java.io.EOFException: null
+	at java.io.DataInputStream.readUnsignedShort(DataInputStream.java:340) ~[?:1.8.0_191]
+	at java.io.DataInputStream.readUTF(DataInputStream.java:589) ~[?:1.8.0_191]
+	at java.io.DataInputStream.readUTF(DataInputStream.java:564) ~[?:1.8.0_191]
+	at ru.geekbrains.march.chat.server.ClientHandler.lambda$new$0(ClientHandler.java:38) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+INFO  2021-04-15 22:16:26 [main] ru.geekbrains.march.chat.server.Server (Server.java:30) - Сервер запущен на порту: 8189
+INFO  2021-04-15 22:16:26 [main] ru.geekbrains.march.chat.server.Server (Server.java:32) - Ожидание клиентов...
